@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .nav-text-hover{
+        @apply hover:text-white hover:font-semibold hover:cursor-pointer visited:text-white ;
+    }
+    .categories li:not(:first-child){
+        @apply py-5 font-medium text-lg border border-zinc-800 pl-12 flex items-center justify-between pr-6 hover:text-white hover:border-l-blue-500 hover:border-l-2 cursor-pointer  
+    }
+    .countdown-numbers{
+        @apply px-2 py-1 text-xl font-medium text-white bg-zinc-900 rounded-md
+    }
+    .countdown-numbers-white{
+        @apply px-2 py-1 text-xl font-medium text-black bg-white rounded-md
+    }
+    
+}
+@layer utilities {
+    .gradient-text {
+     background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent
+}
+.categories li:visited{
+    background-image:url('img/Rectangle 86.svg');
+    background-repeat:no-repeat;
+}
+.product-preview::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+}
+
+
+.product-preview:hover::-webkit-scrollbar {
+    width: 5px; 
+    background-color: #303030;
+}
+
+
+.product-preview::-webkit-scrollbar-thumb {
+    background-color: white; 
+}
+
+.product-preview::-webkit-scrollbar-thumb:hover {
+    background-color: #F1F1F1; 
+}
+.image-background{
+    background-image: url('img/05-Speed (Transparent) 1.png') 1;
+}
+.clipped-image {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%); 
+}
+
+}
