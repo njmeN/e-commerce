@@ -4,11 +4,14 @@
 @tailwind utilities;
 
 @layer base{
+    .site-container > *:not(.site-lines){
+       @apply max-w-[80rem]  mx-auto w-full px-4 relative 
+    }
     .nav-text-hover{
         @apply hover:text-white hover:font-semibold hover:cursor-pointer visited:text-white ;
     }
     .categories li:not(:first-child){
-        @apply py-5 font-medium text-lg border border-zinc-800 pl-12 flex items-center justify-between pr-6 hover:text-white hover:border-l-blue-500 hover:border-l-2 cursor-pointer  
+        @apply py-6 font-medium text-lg border border-zinc-800 pl-12 flex items-center justify-between pr-6 hover:text-white hover:border-l-blue-500 hover:border-l-2 cursor-pointer  
     }
     .countdown-numbers{
         @apply px-2 py-1 text-xl font-medium text-white bg-zinc-900 rounded-md
@@ -19,6 +22,19 @@
     
 }
 @layer utilities {
+    .delivery{
+        background-image: url(img/Delivery.svg); 
+        
+    }
+    .delivery:hover{
+        background-image: url(img/Delivery\ -dark.svg);
+    }
+    .hand-money{
+        background-image: url(img/Hand\ Money.svg); 
+    }  
+    .hand-money:hover{
+        background-image: url(img/Hand\ Money\ -green.svg);                       
+    }
     .gradient-text {
      background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     -webkit-background-clip: text;
