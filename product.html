@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+</head>
+<body  class="box-border p-0 m-0 overflow-x-hidden bg-black">
+    <div class="site-container">
+        <!--social bar-->
+        <div class="flex flex-wrap items-center justify-between my-8">
+            <div class="flex flex-wrap gap-4">
+                <!-- Social icons -->
+                <i class="text-white cursor-pointer fa-brands fa-instagram fa-xl hover:text-zinc-600"></i>
+                <i class="text-white cursor-pointer fa-brands fa-square-facebook fa-xl hover:text-zinc-600"></i>
+                <i class="text-white cursor-pointer fa-brands fa-twitter fa-xl hover:text-zinc-600"></i>
+            </div>
+            <div class="text-xl font-medium text-zinc-300">
+                Up to 20% off for all of the week
+            </div>
+        </div>
+
+        <div class="site-lines w-screen h-[1px] bg-zinc-800"></div>
+
+        <div class="flex flex-wrap items-center justify-between mt-8">
+            <div class="flex flex-wrap items-center gap-24">
+                <div class="flex flex-wrap items-center gap-4">
+                    <div><img class="object-cover w-full h-full" src="img/Vector.svg" loading="lazy"/></div>
+                    <div class="text-3xl font-medium text-zinc-300">obtic</div>
+                </div>
+                <div class="flex flex-wrap items-center gap-8 text-xl font-normal text-zinc-400">
+                    
+                    <div class="relative nav-text-hover navitem-link">Home</div>
+                    <div class="relative nav-text-hover navitem-link">Products</div>
+                    <div class="relative nav-text-hover">Promo</div>
+                    <div class="relative nav-text-hover">Contact us</div>
+                    
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-8">
+                <div><img class="object-cover w-full h-full cursor-pointer" src="img/Minimalistic Magnifer.svg" loading="lazy"/></div>
+                <div><img class="object-cover w-full h-full cursor-pointer" src="img/Fire Minimalistic.svg" loading="lazy"/></div>
+                <div ><img class="object-cover w-full h-full cursor-pointer" src="img/Notification Unread.svg" loading="lazy"/>
+                    
+                </div>
+                <div class="flex flex-wrap items-center gap-4">
+                    <div class="relative"><img class="object-cover w-full h-full p-3 border rounded-md cursor-pointer border-zinc-800" src="img/Bag 3.svg" loading="lazy"/>
+                        <img class="absolute -right-1 -top-1" src="img/Ellipse 13.svg" loading="lazy"/>
+                    </div>
+                    <div class="flex flex-col items-center gap-2 text-xl font-bold text-white">
+                        <div>Josh holmes</div>
+                         <div class="cursor-pointer">View profile</div>
+                    </div>    
+                </div>    
+            </div>   
+        </div>
+        <div class="site-lines w-full h-[1px] bg-zinc-800 mt-5"></div>
+
+        <div class="grid grid-cols-2 mt-8 gap-x-8">
+            <!--product img and chart-->
+            <div>
+                <div class="w-full bg-zinc-900 h-[28.5rem] flex justify-center items-center cursor-pointer rounded-md">
+                    <img src="img/airpod.png" class="w-[22rem] h-[22rem] object-cover"/>
+                </div>
+                <div class="flex flex-wrap items-center mt-6 gap-x-6">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-sm cursor-pointer bg-zinc-900">
+                        <img src="img/airpod.png" class="w-12 h-12"/>
+                    </div>
+                    <div class="flex items-center justify-center w-16 h-16 border-2 rounded-sm cursor-pointer border-zinc-900">
+                        <img src="img/airpod2.png" class="m-1"/>
+                    </div>
+                    <div class="flex items-center justify-center w-16 h-16 border-2 rounded-sm cursor-pointer border-zinc-900">
+                        <img src="img/airpod3.png" class="m-1"/>
+                    </div>
+                    <div class="flex items-center justify-center w-16 h-16 text-2xl font-semibold text-white border-2 rounded-sm cursor-pointer border-zinc-900">
+                        +3
+                    </div>
+                    
+                </div>
+                <div class="site-lines w-full h-[1px] bg-zinc-800 mt-5"></div>
+                <p class="mt-6 text-2xl font-medium text-white">Price chart</p>
+                <div class="grid grid-cols-3 mt-2">
+                    <div class="grid grid-cols-3 mt-3">
+                        <div class="flex flex-col gap-2 text-base font-normal text-neutral-400">
+                            <p>Feb</p>
+                            <p>Mar</p>
+                            <p>Apr</p>
+                            <p>may</p>
+                            <p>Jun</p>
+                            <p>Jul</p>
+                        </div>
+                        <div class="flex flex-col gap-2 text-base font-semibold text-white">
+                            <p>130$</p>
+                            <p>250$</p>
+                            <p>150$</p>
+                            <p>400$</p>
+                            <p>350$</p>
+                            <p>230$</p>
+
+                        </div>
+                        <div class="flex flex-col gap-2 text-base font-normal">
+                            <p class="text-green-400">+30%</p>
+                            <p class="text-green-400">+25%</p>
+                            <p class="text-red-500">-37%</p>
+                            <p class="text-green-400">+78%</p>
+                            <p class="text-red-500">-45%</p>
+                            <p class="text-red-500">-24%</p>
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <canvas id="productPriceChart" class="w-full h-[14rem]"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!--product desc-->
+            <div>
+                <div class="flex items-center p-3 text-base font-semibold border-0 rounded-md bg-neutral-900 text-zinc-600 w-fit">
+                    <p>
+                        Home <i class="fa-solid fa-chevron-right" style="color: #606060;"></i>
+                        <span>Digital products</span> <i class="fa-solid fa-chevron-right" style="color: #606060;"></i>
+                        <span>Headphones and headsets</span> <i class="fa-solid fa-chevron-right" style="color: #606060;"></i>
+                        <span>Apple</span>
+                    </p>
+                </div>
+                <p class="mt-10 text-4xl font-semibold text-white">Air Pods pro</p>
+                <p class="mt-6 text-xl font-normal text-neutral-400">Discover new world of musics and voice calls with new airpods pro with new generation of noise cancelling</p>
+                <div class="flex flex-wrap items-center mt-6 gap-x-4">
+                    <div class="flex gap-x-2">
+                        <i class="fa-solid fa-star" style="color: #fff500;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff500;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff500;"></i>
+                        <i class="fa-solid fa-star" style="color: #fff500;"></i>
+                    </div>
+                    <p class="text-xl font-medium text-white">4.8</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-10 mt-14">
+                    <p class="text-4xl font-semibold text-white">320$</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex flex-wrap items-center px-2 py-1 text-lg font-medium align-middle border-2 rounded-md gap-x-2 border-neutral-600 text-neutral-600"><img src="img/delivery gray.svg"/>Free obtic delivery </div>
+                        <div class="flex flex-wrap items-center py-2 pl-2 pr-3 text-lg font-medium text-green-400 rounded-md gap-x-2 bg-lime-950"><img src="img/Hand Money -green.svg"/>Cash back</div>
+                    </div>
+
+                </div>
+                <div class="flex items-center mt-12 gap-x-6">
+                    <div class="flex items-center p-1 rounded-md bg-neutral-900 gap-x-4 text-m">
+                        <div class="px-2 py-2 bg-black cursor-pointer"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></div>
+                        <p class="text-2xl font-medium text-white">1</p>
+                        <div class="px-2 py-2 bg-black cursor-pointer"><i class="fa-solid fa-minus" style="color: #ffffff;"></i></div>
+                    </div>
+                    <button class="flex px-8 py-2 overflow-hidden text-lg font-semibold text-white transition-all duration-500 bg-blue-700 rounded-md gap-x-2 whitespace-nowrap hover:bg-blue-800">
+                        <img class="w-6 h-8 align-middle" src="img/Bag 3.svg" loading="lazy"/>
+                        Add to cart
+                    </button>
+                    <div class="px-12 py-2 text-xl font-medium text-white transition-all duration-300 border-2 rounded-md cursor-pointer border-neutral-600 hover:border-neutral-400">Buy now</div>
+                </div>
+                <div class="w-full h-[1px] bg-zinc-800 mt-8"></div>
+                <div>
+                    <div class="flex flex-wrap items-center justify-between mt-8">
+                        <p class="text-2xl font-medium text-white">Description</p>
+                        <div class="flex flex-wrap items-center gap-x-2">
+                            <p class="text-lg font-medium cursor-pointer text-neutral-400 hover:text-neutral-50">See more</p>
+                            <i class="fa-solid fa-chevron-right hover:cursor-pointer text-neutral-400 hover:text-neutral-50"></i>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-lg font-medium text-neutral-400 line-clamp-3">AirPods Pro have been reengineered for even richer audio experiences.
+                        Next-level Active Noise Cancellation and Adaptive Transparency reduce more external noise.....
+                    </p>
+                </div>
+                <div class="w-full h-[1px] bg-zinc-800 mt-8"></div>
+                <div>
+                    <div class="flex flex-wrap items-center justify-between mt-8">
+                        <p class="text-2xl font-medium text-white">Charactristics</p>
+                        <i class="cursor-pointer fa-solid fa-chevron-right text-neutral-400 hover:text-neutral-50"></i>
+                    </div>
+                    <p class="mt-6 text-lg font-medium text-neutral-400 line-clamp-3"></p>
+                </div>
+                <div class="w-full h-[1px] bg-zinc-800 mt-8"></div>
+                <div>
+                    <div class="flex flex-wrap items-center justify-between mt-8">
+                        <p class="text-2xl font-medium text-white">Reviews</p>
+                        <i class="cursor-pointer fa-solid fa-chevron-right text-neutral-400 hover:text-neutral-50"></i>
+                    </div>
+                    <p class="mt-6 text-lg font-medium text-neutral-400 line-clamp-3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://kit.fontawesome.com/cc60ff0d42.js" crossorigin="anonymous"></script>
+        <script>
+                                // chart
+
+                const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+                const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+                const ctx = document.getElementById('productPriceChart')
+                new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                    fill: false,
+                    lineTension: 0.4,
+                    backgroundColor: "rgba(255,255,255,1)",
+                    borderColor: "rgba(255,255,255,1)",
+                    data: yValues,
+                    pointRadius:1,
+                    pointHoverRadius:4,
+                    }]
+                },
+                options: {
+                   
+                    plugins:{
+                    tooltip:{
+                        displayColors:false,
+                        callbacks: {
+                                        title : () => null 
+                                    }
+                    },   
+                    legend: {
+                        display: false
+                    }
+                    },
+                    scales: {
+                        y: {
+                                grid: {
+                                    display: false
+                                }
+                            }   , 
+                        yAxes: [{ticks: {min: 6, max:16}}],
+                        y: {
+                            grid: {
+                                color: '#ffffff44', // Color of the x-axis grid lines
+                                },
+                                
+                                
+                            },
+                    },
+                    
+
+                }
+                });
+        </script>
+        
+</body>
+</html>

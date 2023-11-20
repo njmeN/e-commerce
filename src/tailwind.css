@@ -4,12 +4,14 @@
 @tailwind utilities;
 
 @layer base{
+    
     .site-container > *:not(.site-lines){
        @apply max-w-[80rem]  mx-auto w-full px-4 relative 
     }
     .nav-text-hover{
         @apply hover:text-white hover:font-semibold hover:cursor-pointer visited:text-white ;
     }
+    
     .categories li:not(:first-child){
         @apply py-6 font-medium text-lg border border-zinc-800 pl-12 flex items-center justify-between pr-6 hover:text-white hover:border-l-blue-500 hover:border-l-2 cursor-pointer  
     }
@@ -22,6 +24,7 @@
     
 }
 @layer utilities {
+
     .delivery{
         background-image: url(img/Delivery.svg); 
         
